@@ -2,7 +2,7 @@
   "name": "quiz-json-formatter",
   "displayName": "quiz-json-formatter",
   "description": "Provides validation and IntelliSense for Quiz JSON files.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.108.1"
   },
