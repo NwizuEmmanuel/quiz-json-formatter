@@ -6,7 +6,7 @@
   "engines": {
     "vscode": "^1.108.1"
   },
-  "publisher": "Onyekachiukwu Nwizu",
+  "publisher": "onyekachiukwu",
   "categories": [
     "Programming Languages"
   ],
@@ -19,5 +19,18 @@
         "url": "./schemas/quiz.schema.json"
       }
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NwizuEmmanuel/quiz-json-formatter"
+  },
+  "license": "MIT",
+  "icon": "./icons8-sparkler-100.png",
+  "keywords": [
+    "quiz",
+    "json",
+    "education",
+    "validation",
+    "schema"
+  ]
 }
