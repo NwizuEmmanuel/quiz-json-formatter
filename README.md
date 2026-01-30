@@ -33,7 +33,7 @@ This extension enforces a strict quiz structure using JSON Schema to ensure quiz
 Or install via command line:
 
 ```bash
-code --install-extension YOUR_PUBLISHER.quiz-json
+code --install-extension onyekachiukwu.quiz-json-formatter
 ````
 
 ---
