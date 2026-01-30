@@ -1,0 +1,23 @@
+{
+  "name": "quiz-json-formatter",
+  "displayName": "quiz-json-formatter",
+  "description": "Provides validation and IntelliSense for Quiz JSON files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.108.1"
+  },
+  "publisher": "Onyekachiukwu Nwizu",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "jsonValidation": [
+      {
+        "fileMatch": [
+          "*.quiz.json"
+        ],
+        "url": "./schemas/quiz.schema.json"
+      }
+    ]
+  }
+}

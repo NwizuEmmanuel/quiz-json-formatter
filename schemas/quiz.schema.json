@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Quiz Schema",
+  "description": "Quiz file format for quiz engine",
+  "type": "object",
+  "required": ["title", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          { "$ref": "#/definitions/identificationQuestion" },
+          { "$ref": "#/definitions/multipleChoiceQuestion" }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "identificationQuestion": {
+      "type": "object",
+      "required": ["type", "question", "answer"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": 0,
+          "description": "0 = Identification question"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "answer": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "multipleChoiceQuestion": {
+      "type": "object",
+      "required": ["type", "question", "options", "correctAnswer"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": 1,
+          "description": "1 = Multiple choice question"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "options": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "correctAnswer": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3,
+          "description": "Index of correct option (0-3)"
+        }
+      }
+    }
+  }
+}
