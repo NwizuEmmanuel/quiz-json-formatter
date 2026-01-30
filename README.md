@@ -4,6 +4,8 @@
 ![VS Code Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/onyekachiukwu.quiz-json-formatter)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+[VS code marketplace](https://marketplace.visualstudio.com/items?itemName=onyekachiukwu.quiz-json-formatter)
+
 Provides validation and IntelliSense for `.quiz.json` files in Visual Studio Code.
 
 This extension enforces a strict quiz structure using JSON Schema to ensure quizzes are properly formatted, validated, and error-free.
@@ -283,22 +285,6 @@ Errors appear as red underlines in VS Code.
 
 ---
 
-## 🛠 Development
-
-To package locally:
-
-```bash
-vsce package
-```
-
-To publish:
-
-```bash
-vsce publish
-```
-
----
-
 ## 📄 License
 
 MIT License
@@ -310,5 +296,7 @@ MIT License
 Contributions, suggestions, and improvements are welcome.
 
 Feel free to open issues or submit pull requests on GitHub.
+
+[Github here](https://github.com/NwizuEmmanuel/quiz-json-formatter)
 
 ---
